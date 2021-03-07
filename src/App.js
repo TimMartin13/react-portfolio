@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 
 import About from "./pages/About";
-// import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Portfolio";
 // import PostIt from "./pages/PostIt";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
         <Navbar />
         <Wrapper>
           <Route exact path="/" component={ About } />
-          {/* <Route exact path="/portfolio" component={ Portfolio } />
-          <Route exact path="/portfolio/postit" component={ PostIt } /> */}
+          <Route exact path="/portfolio" component={ Portfolio } />
+          {/* <Route exact path="/portfolio/postit" component={ PostIt } /> */}
         </Wrapper>
         {/* <Footer /> */}
       </div>

@@ -1,0 +1,23 @@
+/* About Me styling */
+.my-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 25px 0px 15px;
+  border-bottom: 2px solid grey;
+}
+
+/* Stunning image */
+.about-me {
+  float: left;
+  margin: 5px 15px 5px 0px;
+  width: 200px;
+  height: 200px;
+}
+
+/* Bragging */
+p {
+  font-size: 20px;
+  padding: 7px;
+
+}
