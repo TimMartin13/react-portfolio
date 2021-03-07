@@ -1,0 +1,14 @@
+body {
+  font-family: 'EB Garamond', serif;
+  background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
+}
+
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+}
+
+/* Brand style */
+span {
+  padding: 5px;
+  font-size: 24px;
+}

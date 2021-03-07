@@ -1,0 +1,29 @@
+/* Contact information card */
+.info {
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.contact-info {
+  vertical-align: center;
+}
+/* Paragraphs on the information card */
+.card-p {
+  font-size: 16px;
+  list-style: none;
+  line-height: 20px;
+}
+
+i {
+  font-size: 24px;
+}
+
+/* Links on the information card */
+.card-a {
+  color: #0299df;
+}
+
+.card-a:hover {
+  text-decoration: none;
+  color:grey; 
+}
