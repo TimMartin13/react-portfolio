@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
-// import Cell from "./Cell"
+import Cell from "../Cell"
+import projects from "../../projects.json";
 
 function PortfolioCard() {
   return (
@@ -14,7 +15,11 @@ function PortfolioCard() {
 
 {/* Loop here */}
                 <section className="row justify-content-between">
-                  {/* <Cell /> */}
+                  { 
+                    projects.map((project, i) => (
+                      <Cell project={ project } key={ i }/>
+                    ))
+                  }
                 </section>
 
             </div>

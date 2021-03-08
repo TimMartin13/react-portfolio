@@ -4,8 +4,8 @@ import "./style.css";
 
 function Portfolio() {
   return (
-    <main class="container-fluid main-content">
-      <article class="row center">
+    <main className="container-fluid main-content">
+      <article className="row center">
         <PortfolioCard />
       </article>
     </main>

@@ -1,0 +1,14 @@
+/* Titles for my projects */
+.project-title {
+  text-decoration: underline;
+}
+
+/* Stunning image */
+.portfolio {
+  float: left;
+  margin: 5px 25px 50px 0px;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+}
