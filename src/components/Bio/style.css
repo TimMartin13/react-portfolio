@@ -1,6 +1,10 @@
+.card-background {
+  background: rgba(45, 48, 50, 0.8);
+  font-family: 'EB Garamond', serif;
+}
+
 /* About Me styling */
 .my-title {
-  font-family: 'EB Garamond', serif;
   font-size: 50px;
   font-weight: bold;
   padding: 25px 0px 15px;
@@ -19,5 +23,4 @@
 p {
   font-size: 20px;
   padding: 7px;
-
 }

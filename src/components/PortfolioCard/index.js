@@ -7,13 +7,12 @@ function PortfolioCard() {
   return (
     <main className="container col-lg-10">
         <article className="row">
-          <div className="col-lg-12 col-md-12 card-style bkgd-color">
+          <div className="col-lg-12 col-md-12 card-style card-background">
             {/* Card Header */}
             <div className="col-md-12 text-color">
                 {/* Title */}
                 <h1 className="my-title">Portfolio</h1>
-
-{/* Loop here */}
+                {/* Loop through the projects */}
                 <section className="row justify-content-between">
                   { 
                     projects.map((project, i) => (

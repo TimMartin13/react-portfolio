@@ -1,0 +1,85 @@
+.postit_background {
+  font-family: 'Lato';
+  background-image: url("https://images.creativemarket.com/0.1.0/ps/6471534/1820/1213/m1/fpnw/wm1/etodr1xllga6stcmdgmmze4mfznambpsphwvqn9bibsvxic3js10pfai0gimblud-.jpg?1559328751&s=397f1b83f1cca1fa251ccb4e5efeb849");
+  color:#fff;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.links {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.left {
+  text-align: left;
+}
+
+.position {
+  object-position: 0px 5%;
+}
+
+.note {
+  list-style:none;
+}
+
+.note section{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:25em;
+  width:25em;
+  padding:1em;
+  margin: 2em 1em 0em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transform: rotate(-6deg);
+}
+
+.note{
+  margin:1em;
+}
+
+.note:nth-child(even) section{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+.note:nth-child(3n) section{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+.note:nth-child(5n) section{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+.note section:hover,ul li section:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.20);
+  position:relative;
+  z-index:1;
+}
+
+.post-it{
+  font-family: 'Reenie Beanie';
+  font-size: 2rem;
+  text-decoration: none;
+  color:#000;
+}
+
+.portfolio {
+  width: 23em;
+  height: 16em;
+  object-fit: cover;
+}
+
+.position {
+  object-position: 0px 5%;
+}

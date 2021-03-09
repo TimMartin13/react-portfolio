@@ -1,3 +1,9 @@
+/* .portfolio-main-content {
+  margin: auto;
+  background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
+  height: 100%;
+} */
+
 /* About Me styling */
 .my-title {
   font-family: 'EB Garamond', serif;
@@ -19,5 +25,4 @@
 p {
   font-size: 20px;
   padding: 7px;
-
 }

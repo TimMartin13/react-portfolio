@@ -8,7 +8,7 @@ import Wrapper from "./components/Wrapper";
 
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-// import PostIt from "./pages/PostIt";
+import PostIt from "./pages/PostIt";
 
 function App() {
   return (

@@ -1,6 +1,13 @@
-body {
+.navbar {
   font-family: 'EB Garamond', serif;
-  background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
+}
+
+.bkgd-color {
+  background: rgba(45, 48, 50, 1.0);  
+}
+
+.text-color {
+  color: #D2D3D3;
 }
 
 nav.navbar.navbar-default {

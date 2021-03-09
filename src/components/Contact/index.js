@@ -10,7 +10,7 @@ function Contact() {
             <section className="row">
                 <div className="col-md-12 info">
                     {/* Information */}
-                    <div className="card bkgd-color">
+                    <div className="card card-background">
                         <div className="card-body text-color">
                             <h4 className="card-title text-color">Tim Martin</h4>
                             <h6 className="card-subtitle mb-2 text-muted">Full Stack Developer</h6>

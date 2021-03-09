@@ -1,6 +1,8 @@
 /* Main container for the page */
 .main-content {
   margin: auto;
+  background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
+  height: 100vh;
 }
 
 /* Center class */

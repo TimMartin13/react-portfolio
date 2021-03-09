@@ -5,8 +5,8 @@ import "./style.css";
 
 function About() {
   return (
-    <main class="container-fluid main-content">
-      <article class="row center">
+    <main className="container-fluid main-content">
+      <article className="row center">
         <Bio />
         <Contact />
       </article>

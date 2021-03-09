@@ -3,7 +3,7 @@ import "./style.css";
 
 function Bio() {
   return (
-    <div className="col-md-7 card-style bkgd-color opacity">
+    <div className="col-md-7 card-style card-background">
       {/* Card Header */}
       <div className="col-md-12 ">
           {/* Title */}

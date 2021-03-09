@@ -1,9 +1,4 @@
 /* Main container for the page */
-body {
-  background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
-  /* height: 100%; */
-}
-
 .main-content {
   margin: auto;
 }
@@ -26,4 +21,14 @@ article {
   margin: 20px 20px 20px;;
   float: left;
   border-radius: 5px;
+}
+
+.notes-list {
+  list-style:none;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
