@@ -7,14 +7,14 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand navbar-dark bkgd-color">
       {/* Name link to home page */}
-      <Link className="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/about">
         <span className="text-color">Tim Martin</span>
       </Link>
       {/* Menu items */}
       <ul className="navbar-nav d-flex ml-auto text-color">
         <li className="nav-item">
           <Link
-            to="/"
+            to="/about"
             className={ "nav-link" }
           >
             About
