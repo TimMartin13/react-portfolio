@@ -7,14 +7,14 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand navbar-dark bkgd-color">
       {/* Name link to home page */}
-      <Link className="navbar-brand" to="/react-portfolio/about">
+      <Link className="navbar-brand" to="/">
         <span className="text-color">Tim Martin</span>
       </Link>
       {/* Menu items */}
       <ul className="navbar-nav d-flex ml-auto text-color">
         <li className="nav-item">
           <Link
-            to="/react-portfolio/about"
+            to="/about"
             className={ "nav-link" }
           >
             About
@@ -22,7 +22,7 @@ function Navbar() {
         </li>
         <li className="nav-item">
           <Link
-            to="/react-portfolio/portfolio"
+            to="/portfolio"
             className={ "nav-link" }
           >
             Portfolio
