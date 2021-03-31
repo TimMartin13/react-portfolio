@@ -1,22 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Employee Directory",
-    "image": "assets/images/employee-directory.jpg",
-    "deployed": "https://timmartin13.github.io/employee-directory/",
-    "repository": "https://github.com/TimMartin13/employee-directory",
-    "description": "An employee list, written in React.js, that displays a list of employees from the Random User API and allows them to be searched dynamically by name and also sorted by name."
+    "title": "The Featured Edge",
+    "image": "assets/images/featuredEdge.jpg",
+    "deployed": "https://featured-edge.herokuapp.com/",
+    "repository": "https://github.com/NickStull/maker-spotlight",
+    "description": "This is a website designed for custom knife aficionados. It is a place for those in the custom knife community to show off their hard work, get ideas for future projects, or just appreciate the art of talented craftsmen. We highlight a knife maker each month, and send out a monthly newsletter to our members."
   },
   {
     "id": 2,
-    "title": "movieIQ🎬",
-    "image": "assets/images/movieIQ_home.jpg",
-    "deployed": "https://nickstull.github.io/Movie-Guessing-Game/index.html",
-    "repository": "https://github.com/NickStull/Movie-Guessing-Game",
-    "description": "A movie trivia game, written in JavaScript, HTML, and CSS, which grabs the top 100 movies from the OMDB API and then gives hints based on the information provided."
-  },
-  {
-    "id": 3,
     "title": "Horse Manager",
     "image": "assets/images/loginPage.png",
     "deployed": "https://whispering-inlet-04022.herokuapp.com/",
@@ -24,7 +16,23 @@
     "description": "Horse Manager is an application that allows barn managers to keep track and input a horse's daily upkeep. In the application the barn manager can add specific details of a horses diet information to when they were last vaccinated along with specific notes. Not only is this beneficial to the barn manager but also the horse owner. It allows the horse owner to also log in to see these details about their horses."
   },
   {
+    "id": 3,
+    "title": "Employee Directory",
+    "image": "assets/images/employee-directory.jpg",
+    "deployed": "https://timmartin13.github.io/employee-directory/",
+    "repository": "https://github.com/TimMartin13/employee-directory",
+    "description": "An employee list, written in React.js, that displays a list of employees from the Random User API and allows them to be searched dynamically by name and also sorted by name."
+  },
+  {
     "id": 4,
+    "title": "movieIQ🎬",
+    "image": "assets/images/movieIQ_home.jpg",
+    "deployed": "https://nickstull.github.io/Movie-Guessing-Game/index.html",
+    "repository": "https://github.com/NickStull/Movie-Guessing-Game",
+    "description": "A movie trivia game, written in JavaScript, HTML, and CSS, which grabs the top 100 movies from the OMDB API and then gives hints based on the information provided."
+  },
+  {
+    "id": 5,
     "title": "Fitness Tracker",
     "image": "assets/images/dashboard.jpg",
     "deployed": "https://pacific-falls-39668.herokuapp.com/",
@@ -32,7 +40,7 @@
     "description": "A fitness tracker that allows to to track your workouts by entering them into the app which then stores them in a NoSQL database."
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Day Planner",
     "image": "assets/images/day_planner.jpg",
     "deployed": "https://timmartin13.github.io/day_planner/",
@@ -40,7 +48,7 @@
     "description": "A work day scheduler, written in JavaScript and jQuery, that saves activities to the local storage and also keeps track of the date and hour, and changes the page accordingly."
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Budget Tracker",
     "image": "assets/images/tableGraph.jpg",
     "deployed": "https://sleepy-headland-97957.herokuapp.com/",
@@ -48,7 +56,7 @@
     "description": "A budget tracker that can be used both online and offline using indexedDB and service workers."
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Weather Dashboard",
     "image": "assets/images/weather_dashboard.jpg",
     "deployed": "https://timmartin13.github.io/weather_dashboard/",
@@ -56,15 +64,15 @@
     "description": "A weather dashboard that, uses the openweathermap API, and allows the user to search for various cities. The dashboard will remember your city search history and display the date, temp, humidity, wind speed, UV index, and a 5-day forecast."
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Note Taker",
     "image": "assets/images/notesPage.jpg",
     "deployed": "https://fathomless-dusk-84204.herokuapp.com/",
     "repository": "https://github.com/TimMartin13/note-taker",
-    "description": "A weather dashboard that, uses the openweathermap API, and allows the user to search for various cities. The dashboard will remember your city search history and display the date, temp, humidity, wind speed, UV index, and a 5-day forecast."
+    "description": "A note taking application that allows the user to take notes and saves them to a 'database' file. This way the user can save and delete notes at will."
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Eat-Da-Burger",
     "image": "assets/images/lists.jpg",
     "deployed": "https://calm-chamber-62526.herokuapp.com/",
@@ -72,11 +80,11 @@
     "description": "A burger application called Eat-Da-Burger! that allows users to input the names of burgers they'd like to eat. The burgers show up in a list in the left hand burger on the screen until the user hits the 'Eat it!' button, which then shifts the burger into the right hand burger on the screen."
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Password Generator",
     "image": "assets/images/password_generator.jpg",
     "deployed": "https://timmartin13.github.io/password_generator/",
     "repository": "https://github.com/TimMartin13/password_generator",
-    "description": "A burger application called Eat-Da-Burger! that allows users to input the names of burgers they'd like to eat. The burgers show up in a list in the left hand burger on the screen until the user hits the 'Eat it!' button, which then shifts the burger into the right hand burger on the screen."
+    "description": "A password generator that will generate a password based on user input."
   }
 ]
