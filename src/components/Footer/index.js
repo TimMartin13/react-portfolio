@@ -1,16 +1,15 @@
 import React from "react";
 
 // ********** set date ************
-const date = document.getElementById('date');
-date.innerHTML = new Date().getFullYear();
+const date = new Date().getFullYear();
 
 function Footer() {
   return (
     // footer
     <footer className="section">
       <p>
-        copyright &copy; Tim Martin &nbsp;
-        <span id="date"></span>
+        copyright &copy; Tim Martin&nbsp;
+        <span id="date">{ date }</span>
         . all rights reserved
       </p>
     </footer>
