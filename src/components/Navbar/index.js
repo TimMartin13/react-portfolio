@@ -20,17 +20,57 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
   
   const [navbarHeight, setNavbarHeight] = useState(0);
-
+  
   const navToggle = () => {
     const linksContainer = document.querySelector('.links-container');
     const links = document.querySelector('.links');
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const linksHeight = links.getBoundingClientRect().height;
   
-    if (containerHeight === 0) { setNavbarHeight(linksHeight); }
-    else { setNavbarHeight(0); }
+    // if (containerHeight === 0) { setNavbarHeight(linksHeight); }
+    // else { setNavbarHeight(0); }
+    if (containerHeight === 0) { linksContainer.style.height = `${ linksHeight }px`; }
+    else { linksContainer.style.height = 0; }
 
   };
+
+  const menuSelection = (linkName) => {
+    // Navigate to specific spot
+    // const navbar = document.getElementById('nav');
+    const linksContainer = document.querySelector('.links-container');
+    // const id = linkName;
+    // const element = document.getElementById(id);
+
+    // // // Calculate the heights
+    // const navHeight = navbar.getBoundingClientRect().height;
+    // const containerHeight = linksContainer.getBoundingClientRect().height;
+    // // const fixedNav = navbar.classList.contains('fixed-nav');
+    // let position = element.offsetTop - navHeight;
+    
+    // console.log("NavBarHeight:", navbarHeight);   
+    // console.log("NavHeight:", navHeight);
+    // console.log("Position:", position);
+    
+    // if (!fixedNav) {
+    //   position -= navHeight;
+    // }
+    
+    // if (navHeight > 82) {
+    //   position += containerHeight;
+    //   setNavbarHeight(-containerHeight);
+    // }
+    
+    // window.scrollTo({
+    //   left: 0, 
+    //   top: position
+    // });
+    // setNavbarHeight(containerHeight);
+    linksContainer.style.height = 0;
+  }  
+  
+  // useEffect(() => {
+    
+  // }, [navbarHeight]);
 
   return (
     <nav id="nav">
@@ -51,7 +91,8 @@ const Navbar = () => {
                 spy={ true }
                 smooth={ true }
                 duration={ 100 }
-                onClick={() => setNavbarHeight(0)}
+                onClick={() => menuSelection("home")}
+                // style={{color: 'white'}}
               >
                 <span className="scroll-link">Home</span>
               </ Link>
@@ -63,8 +104,10 @@ const Navbar = () => {
                 to="about"
                 spy={ true }
                 smooth={ true }
+                // offset={ -navbarHeight }
                 duration={ 100 }
-                onClick={() => setNavbarHeight(0)}
+                // onClick={() => menuSelection("about")}
+                // style={{color: 'white'}}
               >
                 About
               </ Link>
@@ -77,7 +120,8 @@ const Navbar = () => {
                 spy={ true }
                 smooth={ true }
                 duration={ 100 }
-                onClick={() => setNavbarHeight(0)}
+                // onClick={() => setNavbarHeight(0)}
+                // style={{color: 'white'}}
               >
                 Projects
               </ Link>
