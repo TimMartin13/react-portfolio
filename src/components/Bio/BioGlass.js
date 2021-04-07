@@ -8,15 +8,9 @@ function BioGlass() {
       <div className="about-content">
         {/* single item */}
         <div className="content active" id="bio">
-          <h4>history</h4>
+          <h3>My Story</h3>
           <p>
-            I'm baby wolf pickled schlitz try-hard normcore marfa man bun
-            mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
-            rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
-            tilde try-hard, woke fixie banjo man bun. Small batch tumeric
-            mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
-            direct trade hoodie ugh chambray, craft beer pork belly flannel
-            tacos single-origin coffee art party migas plaid pop-up.
+            Full stack web developer leveraging 15 years experience designing UX/UI for flat panel trainers within the airline training industry. Recently earned a certificate in full stack development from the University of Minnesota, with newly developed skills in JavaScript, CSS, React.js, and responsive web design. Known as an innovative problem solver passionate about developing apps, with a focus on mobile-first design and development. I seek a role as a web developer at a company where I can learn, grow, and continue to master the craft. 
           </p>
         </div>
         {/* end of single item */}
