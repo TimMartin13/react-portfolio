@@ -1,12 +1,6 @@
 import React from "react";
 import "./style.css";
-import profilePicture from '../../../images/ProfilePicture.jpg';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
+import ContactGlass from '../../Contact/ContactGlass';
 
 function AboutUs() {
 
@@ -18,39 +12,10 @@ function AboutUs() {
     <section id="about" className="section">
       <div className="title">
         <h2>about <span>me</span></h2>
-        {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          aperiam!
-        </p> */}
       </div>
-
+      
       <div className="about-center section-center">
-        <article className="about-img">
-          <img className="profile" src={ profilePicture } alt="Tim Martin"/>
-          <div className="nameTitle">
-            <h2>Tim Martin</h2>
-            <h5>Full Stack Developer</h5>
-            <div className="iconRow">
-              <IconButton aria-label="github" href="https://github.com/TimMartin13" target="_blank">
-                <GitHubIcon style={{ color: "purple" }} />
-              </IconButton>
-              <IconButton aria-label="linkedIn" href="https://www.linkedin.com/in/tim-martin13/" target="_blank">
-                <LinkedInIcon style={{ color: "blue" }} />
-              </IconButton>
-              <Tooltip title="612-799-1450" arrow>
-                <IconButton aria-label="phone number">
-                  <PhoneAndroidIcon style={{ color: "green" }} />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="timmartin13@gmail.com" arrow>
-                <IconButton aria-label="email">
-                  <MailOutlineIcon style={{ color: "red" }} />
-                </IconButton>
-              </Tooltip>
-              
-            </div>
-          </div>
-        </article>
+        <ContactGlass />
         <article className="about">
           {/* btn container */}
           {/* <div className="btn-container">
