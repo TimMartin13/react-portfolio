@@ -17,10 +17,6 @@ function AboutUs() {
       <div className="about-center section-center">
         <ContactGlass />
         <article className="about">
-          {/* btn container */}
-          {/* <div className="btn-container">
-            <button className="tab-btn active" data-id="bio">bio</button>
-          </div> */}
           <div className="about-content">
             {/* single item */}
             <div className="content active" id="bio">

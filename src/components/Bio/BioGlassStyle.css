@@ -1,0 +1,24 @@
+.about {
+  /* Glass styles */
+  background: rgba(255, 255, 255, .6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 5px 100px;
+  flex: 1 1 40em;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.about-content {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  padding: 2rem 1.5rem;
+}
+
+  /* hide content */
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
