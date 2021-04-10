@@ -34,15 +34,21 @@ const useStyles = makeStyles({
     margin: 10,
     background: 'rgba(255, 255, 255, .6)',
     // -webkit-backdrop-filter: blur(10px);
-    backdropFilter: 'blur(10px)'
+    backdropFilter: 'blur(10px)',
+    borderRadius: '100px 5px'
   },
   media: {
     height: 140,
+    objectFit: 'cover',
+    objectPosition: '120px 5%'
   },
 });
 
 const Accordion = withStyles({
   root: {
+    background: 'rgba(255, 255, 255, 0)',
+    // -webkit-backdrop-filter: blur(10px);
+    backdropFilter: 'blur(10px)',
     border: '1px solid rgba(0, 0, 0, .125)',
     boxShadow: 'none',
     '&:not(:last-child)': {
@@ -60,7 +66,7 @@ const Accordion = withStyles({
 
 const AccordionSummary = withStyles({
   root: {
-    backgroundColor: 'rgba(0, 0, 0, .03)',
+    // backgroundColor: 'rgba(0, 0, 0, .03)',
     borderBottom: '1px solid rgba(0, 0, 0, .125)',
     marginBottom: -1,
     minHeight: 56,
@@ -93,7 +99,6 @@ export default function ProjectCard(props) {
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
         <CardMedia
           className={classes.media}
           image={ imageArray[props.project.id - 1] }
@@ -118,17 +123,18 @@ export default function ProjectCard(props) {
               <Typography>Technology</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              {/* <Typography> */}
-                { 
-                  props.project.technology.map((icon) => (
+              <Typography>
+                { props.project.technology }
+                {/* { 
+                  props.project.technology.map((tech) => (
                     <i class={ icon }></i>
+                    // "technology": ["fab fa-react", "fab fa-js-square", "fab fa-css3-alt", "fab fa-html5", "fab fa-node-js", "fab fa-bootstrap", "fab fa-mailchimp"]
                   ))
-                }
-              {/* </Typography> */}
+                } */}
+              </Typography>
             </AccordionDetails>
           </Accordion>
         </CardContent>
-      </CardActionArea>
       <CardActions>
         <Button size="small" color="primary" href={ props.project.deployed } target="_blank">
           Site

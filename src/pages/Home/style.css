@@ -337,6 +337,10 @@ header {
 
 #projects {
   height: auto;
+  background: linear-gradient(rgba(2, 145, 50, 0.7), rgba(16, 42, 66, 0.7));
+  /* background: linear-gradient(rgba(95, 63, 212, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../../images/holi-powders.jpg) center/cover no-repeat; */
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 780px) {
