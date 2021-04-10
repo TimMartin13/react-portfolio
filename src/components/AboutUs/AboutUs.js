@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.css";
-import ContactGlass from '../../Contact/ContactGlass';
-import BioGlass from '../../Bio/BioGlass';
+import "./AboutUsStyle.css";
+import ContactGlass from '../Contact/ContactGlass';
+import BioGlass from '../Bio/BioGlass';
 
 function AboutUs() {
 

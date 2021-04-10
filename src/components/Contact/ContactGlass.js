@@ -35,12 +35,12 @@ function ContactGlass() {
           </Tooltip>
           <Tooltip title="timmartin13@gmail.com" arrow>
             <IconButton aria-label="email">
-                <MailOutlineIcon style={{ color: "green" }} />
+              <MailOutlineIcon style={{ color: "green" }} />
             </IconButton>
           </Tooltip>
           <Tooltip title="Resume" arrow>
             <IconButton aria-label="resume" href={ resumePDF } target="_blank">
-                <PictureAsPdfIcon style={{ color: "red" }} />
+              <PictureAsPdfIcon style={{ color: "red" }} />
             </IconButton>
           </Tooltip>
         </div>

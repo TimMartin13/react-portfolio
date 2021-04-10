@@ -302,7 +302,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(95, 63, 212, 0.3), rgba(0, 0, 0, 0.7)),
-    url(./Holi.jpg) center/cover no-repeat;
+    url(../../images/Holi.jpg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -335,9 +335,12 @@ header {
   color: var(--clr-secondary);
 }
 
+#projects {
+  height: auto;
+}
+
 @media screen and (min-width: 780px) {
-  #about,
-  #projects {
+  #about {
     height: 90vh;
   }
 }
@@ -345,9 +348,6 @@ header {
   #about {
     height: auto;
     padding-bottom: 60px;
-  }
-  #projects {
-    height: auto;
   }
 }
 #services {

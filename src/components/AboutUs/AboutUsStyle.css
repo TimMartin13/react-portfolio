@@ -5,7 +5,7 @@ About
 */
 #about {
   background: linear-gradient(rgba(95, 63, 212, 0.5), rgba(0, 0, 0, 0.1)),
-    url("../../../images/holi_background.jpg") center/cover no-repeat;
+    url("../../images/holi_background.jpg") center/cover no-repeat;
 }
 
 .title {
@@ -25,7 +25,7 @@ About
 @media screen and (max-width: 854px) {
   #about {
     background: linear-gradient(rgba(95, 63, 212, 0.5), rgba(0, 0, 0, 0.1)),
-      url("../../../images/holi_background_sm.jpg") center/cover no-repeat;
+      url("../../images/holi_background_sm.jpg") center/cover no-repeat;
   }
 }
 
