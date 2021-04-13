@@ -294,9 +294,10 @@ nav {
     font-weight: bold;
     padding: 0;
   }
-  .links a:hover {
+  .links li:hover {
     color: var(--clr-white);
   }
+
 }
 /* hero */
 header {

@@ -2,17 +2,6 @@ import React from "react";
 import './style.css'
 import ProjectCard from "../ProjectCard/ProjectCard";
 import projectList from "../../projects.json";
-import featuredEdge from "../../images/featuredEdge.jpg";
-import directory from "../../images/employee-directory.jpg";
-import movie from "../../images/movieIQ_home.jpg";
-import horse from "../../images/loginPage.png";
-import budget from "../../images/tableGraph.jpg";
-import planner from "../../images/day_planner.jpg";
-import fitness from "../../images/dashboard.jpg";
-import weather from "../../images/weather_dashboard.jpg";
-import notes from "../../images/notesPage.jpg";
-import burger from "../../images/lists.jpg";
-import password from "../../images/password_generator.jpg";
 
 function Projects() {
   return (

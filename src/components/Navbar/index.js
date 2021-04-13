@@ -1,26 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link } from 'react-scroll';
-
-
-// ********** fixed navbar ************
-// const navbar = document.getElementById('nav');
-// const topLink = document.querySelector('.top-link');
-
-// window.addEventListener('scroll', function() {
-//     const scrollHeight = window.pageYOffset;
-//     const navHeight = navbar.getBoundingClientRect().height;
-
-//     if (scrollHeight > navHeight) { navbar.classList.add('fixed-nav'); }
-//     else { navbar.classList.remove('fixed-nav'); }
-
-//     // if (scrollHeight > 500) { topLink.classList.add('show-link'); }
-//     // else { topLink.classList.remove('show-link'); }
-// });
+import React, { useState } from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
-  
-  const [navbarHeight, setNavbarHeight] = useState(0);
-  
+
   const navToggle = () => {
     const linksContainer = document.querySelector('.links-container');
     const links = document.querySelector('.links');
@@ -36,41 +18,31 @@ const Navbar = () => {
 
   const menuSelection = (linkName) => {
     // Navigate to specific spot
-    // const navbar = document.getElementById('nav');
+    const navbar = document.getElementById('nav');
     const linksContainer = document.querySelector('.links-container');
-    // const id = linkName;
-    // const element = document.getElementById(id);
+    const id = linkName;
+    const element = document.getElementById(id);
 
-    // // // Calculate the heights
-    // const navHeight = navbar.getBoundingClientRect().height;
-    // const containerHeight = linksContainer.getBoundingClientRect().height;
-    // // const fixedNav = navbar.classList.contains('fixed-nav');
-    // let position = element.offsetTop - navHeight;
+    // // Calculate the heights
+    const navHeight = navbar.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    const fixedNav = navbar.classList.contains('fixed-nav');
+    let position = element.offsetTop - navHeight;
+        
+    if (!fixedNav) {
+      position -= navHeight;
+    }
     
-    // console.log("NavBarHeight:", navbarHeight);   
-    // console.log("NavHeight:", navHeight);
-    // console.log("Position:", position);
+    if (navHeight > 82) {
+      position += containerHeight;
+    }
     
-    // if (!fixedNav) {
-    //   position -= navHeight;
-    // }
-    
-    // if (navHeight > 82) {
-    //   position += containerHeight;
-    //   setNavbarHeight(-containerHeight);
-    // }
-    
-    // window.scrollTo({
-    //   left: 0, 
-    //   top: position
-    // });
-    // setNavbarHeight(containerHeight);
+    window.scrollTo({
+      left: 0, 
+      top: position
+    });
     linksContainer.style.height = 0;
   }  
-  
-  // useEffect(() => {
-    
-  // }, [navbarHeight]);
 
   return (
     <nav id="nav">
@@ -82,7 +54,7 @@ const Navbar = () => {
           </button>
         </div>
         {/* links */}
-        <div className="links-container" style={{ height: `${navbarHeight}px` }}>
+        <div className="links-container" style={{ height: `${0}px` }}>
           <ul className="links">
             <li>
               <Link 
@@ -92,11 +64,9 @@ const Navbar = () => {
                 smooth={ true }
                 duration={ 100 }
                 onClick={() => menuSelection("home")}
-                // style={{color: 'white'}}
               >
                 <span className="scroll-link">Home</span>
               </ Link>
-            {/* <a href="#home" class="scroll-link">home</a> */}
             </li>
             <li>
               <Link 
@@ -104,14 +74,10 @@ const Navbar = () => {
                 to="about"
                 spy={ true }
                 smooth={ true }
-                // offset={ -navbarHeight }
                 duration={ 100 }
-                // onClick={() => menuSelection("about")}
-                // style={{color: 'white'}}
               >
                 About
               </ Link>
-              {/* <a href="#about" class="scroll-link">about</a> */}
             </li>
             <li>
               <Link 
@@ -120,12 +86,9 @@ const Navbar = () => {
                 spy={ true }
                 smooth={ true }
                 duration={ 100 }
-                // onClick={() => setNavbarHeight(0)}
-                // style={{color: 'white'}}
               >
                 Projects
               </ Link>
-              {/* <a href="#projects" class="scroll-link">projects</a> */}
             </li>
           </ul>            
         </div>
