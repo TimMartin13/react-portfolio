@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import './App.css';
-
 import { HashRouter as Router, Route } from "react-router-dom";
 // import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";
@@ -10,8 +9,15 @@ import Album from "./pages/Album";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 // import PostIt from "./pages/PostIt";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+  
   return (
     <Router>
       <div>
