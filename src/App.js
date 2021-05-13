@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import './App.css';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, useLocation } from "react-router-dom";
 // import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";
 
@@ -13,6 +13,17 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  // const location = useLocation();
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [location.pathname]);
 
   useEffect(() => {
     Aos.init({});
