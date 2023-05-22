@@ -39,12 +39,8 @@ function BioGlass() {
             have worked on a variety of projects, from large-scale e-commerce
             platforms to small business websites, and I always strive to exceed
             client expectations by delivering high-quality, pixel-perfect code
-            on time and on budget. With a strong focus on usability and
-            accessibility, I believe that great web design can not only look
-            beautiful, but also be easy and enjoyable to use. Whether working
-            independently or as part of a team, I am always excited to tackle
-            new challenges and push the boundaries of what's possible on the
-            web.
+            on time and on budget, with a strong focus on usability and
+            accessibility.
           </p>
         </div>
         {/* end of single item */}

@@ -1,6 +1,6 @@
 .about {
   /* Glass styles */
-  background: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 5px 100px;
@@ -12,7 +12,7 @@
   padding: 2rem 1.5rem;
 }
 
-  /* hide content */
+/* hide content */
 .content {
   display: none;
 }

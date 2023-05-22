@@ -1,7 +1,7 @@
 /* Main container for the page */
 .main-content {
   margin: auto;
-  background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
+  background-image: url('https://wallpapercave.com/wp/WM8j8fk.jpg');
   height: 100vh;
 }
 
@@ -15,12 +15,12 @@ article {
   position: relative;
   top: 40px;
   margin-left: 20px;
-  margin-bottom: 100px; 
+  margin-bottom: 100px;
 }
 
 /* Card styling */
 .card-style {
-  margin: 20px 20px 20px;;
+  margin: 20px 20px 20px;
   float: left;
   border-radius: 5px;
 }

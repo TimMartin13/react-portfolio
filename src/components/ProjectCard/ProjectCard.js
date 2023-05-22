@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import './style.css';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -12,20 +12,32 @@ import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import featuredEdge from "../../images/featuredEdge.jpg";
-import directory from "../../images/employee-directory.jpg";
-import movie from "../../images/movieIQ_home.jpg";
-import horse from "../../images/loginPage.png";
-import budget from "../../images/tableGraph.jpg";
-import planner from "../../images/day_planner.jpg";
-import fitness from "../../images/dashboard.jpg";
-import weather from "../../images/weather_dashboard.jpg";
-import notes from "../../images/notesPage.jpg";
-import burger from "../../images/lists.jpg";
-import password from "../../images/password_generator.jpg";
+import daliHouse from '../../images/dali-house.jpg';
+import dashboard from '../../images/react-dashboard.jpg';
+import hoobank from '../../images/hoobank.jpg';
+import framerMotion from '../../images/framer-motion.jpg';
+import featuredEdge from '../../images/featuredEdge.jpg';
+import directory from '../../images/employee-directory.jpg';
+import movie from '../../images/movieIQ_home.jpg';
+import horse from '../../images/loginPage.png';
+import budget from '../../images/tableGraph.jpg';
+import planner from '../../images/day_planner.jpg';
+import fitness from '../../images/dashboard.jpg';
+import weather from '../../images/weather_dashboard.jpg';
+import notes from '../../images/notesPage.jpg';
+import burger from '../../images/lists.jpg';
+import password from '../../images/password_generator.jpg';
 
-let imageArray = [featuredEdge, horse, directory, movie, fitness, planner, budget, weather, notes, burger, password];
-
+let imageArray = [
+  daliHouse,
+  dashboard,
+  hoobank,
+  framerMotion,
+  featuredEdge,
+  horse,
+  directory,
+  movie,
+];
 
 const useStyles = makeStyles({
   root: {
@@ -34,12 +46,12 @@ const useStyles = makeStyles({
     background: 'rgba(255, 255, 255, .6)',
     // -webkit-backdrop-filter: blur(10px);
     backdropFilter: 'blur(10px)',
-    borderRadius: '100px 5px'
+    borderRadius: '16px 16px',
   },
   media: {
     height: 140,
     objectFit: 'cover',
-    objectPosition: '120px 5%'
+    objectPosition: '120px 5%',
   },
 });
 
@@ -98,47 +110,71 @@ export default function ProjectCard(props) {
 
   return (
     <Card className={classes.root}>
-        <CardMedia
-          className={classes.media}
-          image={ imageArray[props.project.id - 1] }
-          title={ props.project.title }
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            { props.project.title }
-          </Typography>
-          <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" expandIcon={<ExpandMoreIcon />}>
-              <Typography>Description</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                { props.project.description }
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-            <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" expandIcon={<ExpandMoreIcon />}>
-              <Typography>Technology</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                { props.project.technology }
-                {/* { 
+      <CardMedia
+        className={classes.media}
+        image={imageArray[props.project.id - 1]}
+        title={props.project.title}
+      />
+      <CardContent>
+        <Typography gutterBottom variant='h5' component='h2'>
+          {props.project.title}
+        </Typography>
+        <Accordion
+          square
+          expanded={expanded === 'panel1'}
+          onChange={handleChange('panel1')}
+        >
+          <AccordionSummary
+            aria-controls='panel1d-content'
+            id='panel1d-header'
+            expandIcon={<ExpandMoreIcon />}
+          >
+            <Typography>Description</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>{props.project.description}</Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          square
+          expanded={expanded === 'panel2'}
+          onChange={handleChange('panel2')}
+        >
+          <AccordionSummary
+            aria-controls='panel2d-content'
+            id='panel2d-header'
+            expandIcon={<ExpandMoreIcon />}
+          >
+            <Typography>Technology</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              {props.project.technology}
+              {/* { 
                   props.project.technology.map((tech) => (
                     <i class={ icon }></i>
                     // "technology": ["fab fa-react", "fab fa-js-square", "fab fa-css3-alt", "fab fa-html5", "fab fa-node-js", "fab fa-bootstrap", "fab fa-mailchimp"]
                   ))
                 } */}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        </CardContent>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      </CardContent>
       <CardActions>
-        <Button size="small" color="primary" href={ props.project.deployed } target="_blank">
+        <Button
+          size='small'
+          color='primary'
+          href={props.project.deployed}
+          target='_blank'
+        >
           Site
         </Button>
-        <Button size="small" color="primary" href={ props.project.repository } target="_blank">
+        <Button
+          size='small'
+          color='primary'
+          href={props.project.repository}
+          target='_blank'
+        >
           Repository
         </Button>
       </CardActions>
