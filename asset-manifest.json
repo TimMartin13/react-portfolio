@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.77072504.css",
-    "main.js": "/react-portfolio/static/js/main.41ee461c.js",
+    "main.js": "/react-portfolio/static/js/main.c03b282b.js",
     "static/media/holi_background.jpg": "/react-portfolio/static/media/holi_background.b15c5b4acb119770d694.jpg",
     "static/media/Holi.jpg": "/react-portfolio/static/media/Holi.cc5a35f18425edcb374f.jpg",
     "static/media/holi_background_sm.jpg": "/react-portfolio/static/media/holi_background_sm.d58d5cf79d8a003508f1.jpg",
@@ -21,13 +21,14 @@
     "static/media/tableGraph.jpg": "/react-portfolio/static/media/tableGraph.71cea80536365b6bb97c.jpg",
     "static/media/password_generator.jpg": "/react-portfolio/static/media/password_generator.e822856a496052424fc4.jpg",
     "static/media/ProfilePicture.jpg": "/react-portfolio/static/media/ProfilePicture.a2e7c77e0efd8dc9c309.jpg",
+    "static/media/codex.jpg": "/react-portfolio/static/media/codex.723dcd3b54a7202cfd57.jpg",
     "static/media/notesPage.jpg": "/react-portfolio/static/media/notesPage.f758e22ce3ce6a8504aa.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.77072504.css.map": "/react-portfolio/static/css/main.77072504.css.map",
-    "main.41ee461c.js.map": "/react-portfolio/static/js/main.41ee461c.js.map"
+    "main.c03b282b.js.map": "/react-portfolio/static/js/main.c03b282b.js.map"
   },
   "entrypoints": [
     "static/css/main.77072504.css",
-    "static/js/main.41ee461c.js"
+    "static/js/main.c03b282b.js"
   ]
 }
