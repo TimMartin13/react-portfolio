@@ -12,23 +12,17 @@ import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import codex from '../../images/codex.jpg';
 import daliHouse from '../../images/dali-house.jpg';
 import dashboard from '../../images/react-dashboard.jpg';
 import hoobank from '../../images/hoobank.jpg';
 import framerMotion from '../../images/framer-motion.jpg';
 import featuredEdge from '../../images/featuredEdge.jpg';
 import directory from '../../images/employee-directory.jpg';
-import movie from '../../images/movieIQ_home.jpg';
 import horse from '../../images/loginPage.png';
-import budget from '../../images/tableGraph.jpg';
-import planner from '../../images/day_planner.jpg';
-import fitness from '../../images/dashboard.jpg';
-import weather from '../../images/weather_dashboard.jpg';
-import notes from '../../images/notesPage.jpg';
-import burger from '../../images/lists.jpg';
-import password from '../../images/password_generator.jpg';
 
 let imageArray = [
+  codex,
   daliHouse,
   dashboard,
   hoobank,
@@ -36,7 +30,6 @@ let imageArray = [
   featuredEdge,
   horse,
   directory,
-  movie,
 ];
 
 const useStyles = makeStyles({

@@ -1,6 +1,15 @@
 [
   {
     "id": 1,
+    "title": "Codex",
+    "image": "assets/images/codex.jpg",
+    "deployed": "https://codex-chatbot-three.vercel.app/",
+    "repository": "https://github.com/TimMartin13/CodeX-chatbot",
+    "description": "An AI chat bot that takes a user prompt and writes code with the OpenAI api.",
+    "technology": "OpenAI, JavaScript, HTML, Node.js, Express.js, Vite, Vercel, Render"
+  },
+  {
+    "id": 2,
     "title": "The Dali House",
     "image": "assets/images/dali-house.jpg",
     "deployed": "https://the-dali-house.vercel.app/",
@@ -9,7 +18,7 @@
     "technology": "React, OpenAI, Tailwind CSS, JavaScript, HTML, Node.js, Express.js, MongoDB, Cloudinary, Vite, Vercel, Render"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "React Dashboard",
     "image": "assets/images/react-dashboard.jpg",
     "deployed": "https://react-dashboard-rust.vercel.app/",
@@ -18,7 +27,7 @@
     "technology": "React, Syncfusion, Tailwind CSS, JavaScript, HTML, Vercel"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Hoobank",
     "image": "assets/images/hoobank.jpg",
     "deployed": "https://hoobank-one-pied.vercel.app/",
@@ -27,7 +36,7 @@
     "technology": "React, Tailwind CSS, JavaScript, HTML, Vercel"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Framer Motion",
     "image": "assets/images/framer-motion.jpg",
     "deployed": "https://timmartin13.github.io/animations-framer-motion/",
@@ -36,7 +45,7 @@
     "technology": "React, Framer-motion, JavaScript, CSS, HTML, Github"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "The Featured Edge",
     "image": "assets/images/featuredEdge.jpg",
     "deployed": "https://featured-edge.herokuapp.com/",
@@ -45,7 +54,7 @@
     "technology": "React, JavaScript, CSS, HTML, Node.js, Express.js, Firebase, MongoDB, Bootstrap, Cloudinary, Mail Chimp, Heroku"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Horse Manager",
     "image": "../../images/loginPage.png",
     "deployed": "https://whispering-inlet-04022.herokuapp.com/",
@@ -54,21 +63,12 @@
     "technology": "Handlebars, JavaScript, CSS, HTML, Node.js, Express.js, MySQL, Bulma, Heroku"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Employee Directory",
     "image": "assets/images/employee-directory.jpg",
     "deployed": "https://timmartin13.github.io/employee-directory/",
     "repository": "https://github.com/TimMartin13/employee-directory",
     "description": "An employee list, written in React.js, that displays a list of employees from the Random User API and allows them to be searched dynamically, and sorted by name.",
     "technology": "React, JavaScript, CSS, HTML, Node.js, Express.js, Random User API, Bootstrap"
-  },
-  {
-    "id": 8,
-    "title": "movieIQ🎬",
-    "image": "assets/images/movieIQ_home.jpg",
-    "deployed": "https://nickstull.github.io/Movie-Guessing-Game/index.html",
-    "repository": "https://github.com/NickStull/Movie-Guessing-Game",
-    "description": "A movie trivia game, written in JavaScript, HTML, and CSS, which grabs the top 100 movies from the OMDB API and then gives hints based on the information provided.",
-    "technology": "JavaScript, CSS, HTML, OMDB API, Zurb Foundation 6"
   }
 ]
